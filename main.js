@@ -17,7 +17,6 @@ let secsInaMonth = 60 * 60 * 24 * 30;
 
 let secsInaYear = secsInaMonth * 12;
 
-
 let secsInBrthYear = (12 - birthMnth) * secsInaMonth;
 
 let ageInYrs = currentDateYr - birthYr;
@@ -29,4 +28,4 @@ let currentMnthInSecs = currentDateMnth * secsInaMonth
 let sum = currentMnthInSecs + currentYearInSecs + secsInBrthYear;
 
 
-document.write("You are approximately " + sum + " seconds old since birth!")
+document.write("You are approximately " + sum + " seconds oldgit status")
