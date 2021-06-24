@@ -2,12 +2,10 @@ let birthYr = prompt("Please enter the year of your birth.");
 
 let birthMnth = prompt("Please enter the numerical month of your birth.");
 
-const dateObj = new Date();
-const currentDateMnth = dateObj.getMonth() + 1;
-const yearObj = new Date();
-let currentDateYr = yearObj.getFullYear();
-console.log(currentDateYr)
-console.log(currentDateMnth)
+
+const currentDateMnth = new Date().getMonth() + 1;
+
+let currentDateYr = new Date().getFullYear();
 
 if (currentDateMnth < birthMnth) {
     currentDateYr = currentDateYr - 1
@@ -28,4 +26,4 @@ let currentMnthInSecs = currentDateMnth * secsInaMonth
 let sum = currentMnthInSecs + currentYearInSecs + secsInBrthYear;
 
 
-document.write("You are approximately " + sum + " seconds oldgit status")
+document.write("You are approximately " + sum + " seconds old!")
