@@ -4,8 +4,9 @@ let birthMnth = prompt("Please enter the numerical month of your birth.");
 
 
 const currentDateMnth = new Date().getMonth() + 1;
-
 let currentDateYr = new Date().getFullYear();
+parseInt(currentDateMnth);
+parseInt(currentDateYr);
 
 if (currentDateMnth < birthMnth) {
     currentDateYr = currentDateYr - 1
